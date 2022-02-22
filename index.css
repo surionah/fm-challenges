@@ -1,4 +1,93 @@
+:root {
+  --soft-blue: #8bacda;
+  --white: #ffffff;
+  --cyan: #00fff7;
+  --main-bg: #0d192b;
+  --card-bg: #14253d;
+  --line: #2f415b;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  background: var(--main-bg);
+}
+
+.mt {
+  margin-top: 20px;
+}
+
+.card {
+  background: var(--card-bg);
+  width: 320px;
+  border-radius: 15px;
+  margin: auto;
+  padding: 25px;
+  margin-top: 50px;
+}
+
+img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+h1 {
+  color: var(--white);
+}
+
+h1 ~ p {
+  color: var(--soft-blue);
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.price, .last-time {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.price {
+  color: var(--cyan);
+}
+
+.last-time {
+  color: var(--soft-blue);
+}
+
+.last-time > figure, .price > figure {
+  margin-top: 5px;
+}
+
+hr {
+  border: solid 1px var(--line);
+}
+
+.author {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  color: var(--soft-blue);
+}
+
+.author > figure {
+  width: 25px;
+  height: 25px;
+  border: solid 1px var(--white);
+  border-radius: 50%;
+}
+
+strong {
+  color: var(--white);
 }
